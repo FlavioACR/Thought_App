@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Red Social - Home</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  </head>
+  <body>
+    {% include 'header.html' %}
+    <main>
+      <div class="post-form">
+        <h2>Publicar</h2>
+        <form>
+          <textarea name="post-content" placeholder="Escribe tu pensamiento o pregunta aquí"></textarea>
+          <input type="submit" value="Publicar">
+        </form>
+      </div>
+      <div class="post-feed">
+        <h2>Publicaciones recientes</h2>
+        <div class="post">
+          <p>Usuario1: ¿Cuál es tu película favorita?</p>
+        </div>
+        <div class="post">
+          <p>Usuario2: ¡Hoy fue un día increíble!</p>
+        </div>
+        <div class="post">
+          <p>Usuario3: ¿Alguien sabe cómo hacer un pastel de chocolate?</p>
+        </div>
+        <!-- Agrega más publicaciones aquí -->
+      </div>
+    </main>
+
+    {% include 'footer.html'%}
+  </body>
+</html>
+

@@ -3,15 +3,20 @@ from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
 
 
-
-
 user_router = APIRouter()
 
 template = Jinja2Templates(directory='./templates')
 
-
-
 ##--------------------------- ROUTERS & CRUD ---------------------------## 
+
+@user_router.get(path='/login',
+                 response_class=HTMLResponse,
+                 status_code=status.HTTP_202_ACCEPTED,
+                 summary="Page to login a user in the app",
+                 tags=["Users"])
+def login_user(req: Request):
+    return template.TemplateResponse("login.html", {"request": req})
+
 
 @user_router.get(path='/signup',
                  response_class=HTMLResponse,

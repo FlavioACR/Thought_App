@@ -19,21 +19,19 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 Base.metadata.create_all(bind=database_engine)
 
 # Principal base template this is only to create the SuperTemplate:
- 
 @app.get(
     path='/',
     status_code=status.HTTP_200_OK,
-    summary="Home's app and Hello World",
-    tags=['home'])
+    summary="Welcome page to the users",
+    tags=['Home'])
 def home_page(request: Request):
     '''
-    Home's app & Hello World FastAPI 
+    Welcome pages  & Hello World FastAPI 
 
-    This path operation say hellow to everybody user in the app
+    This path operation is the welcome to new and old users in the app
 
-    Parameters: Nothing
-    
-    Returns   : A json with the greeting information
     '''
     return template.TemplateResponse('welcome_page.html', {"request": request})
 
+# ROUTERS:
+app.include_router(user_router)
