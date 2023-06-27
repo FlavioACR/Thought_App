@@ -1,0 +1,139 @@
+/* Fuente personalizada */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+}
+
+/* Estilos para el encabezado de la página */
+header {
+  background-color: #6c5ce7;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+header p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Estilos para el contenido principal */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los botones */
+button {
+  display: inline-block;
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4834d4;
+}
+
+/* Estilos para los formularios */
+
+/* Configuración del formulario para mostrar los elementos en una columna vertical */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para las etiquetas de los campos */
+form label {
+  margin-bottom: 0px; /* Espacio inferior de 2 píxeles entre las etiquetas */
+  font-size: 16px; /* Tamaño de fuente de 16 píxeles */
+  font-weight: bold; /* Fuente en negrita */
+}
+
+/* Estilos para los campos de entrada de texto, email y password */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  display: block; /* Mostrar los campos de entrada como elementos de bloque */
+  margin-bottom: 0px; /* Espacio inferior de 15 píxeles entre los campos de entrada */
+  padding: 10px; /* Relleno de 10 píxeles */
+  border: 1px solid #ccc; /* Borde sólido de 1 píxel en color #ccc */
+  border-radius: 5px; /* Radio de borde de 5 píxeles */
+  font-size: 16px; /* Tamaño de fuente de 16 píxeles */
+}
+
+/* Estilos para el botón de envío */
+form input[type="submit"] {
+  margin-top: 0px; /* Espacio superior de 15 píxeles entre los campos de entrada y el botón de envío */
+}
+
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #2d3436;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+
+link {
+  margin-right: 10px; /* Agrega un margen derecho de 10px */
+}
+
+container {
+  text-align: center; /* Centra los elementos horizontalmente */
+}
+
+link {
+  margin: 0 10px; /* Agrega margen izquierdo y derecho de 10px para separar los elementos */
+}
